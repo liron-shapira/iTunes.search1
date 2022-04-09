@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ITUNES</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@100&family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+
+
+
+</head>
+<body onload="onBodyLoad()">
+
+
+
+<header>
+    iTunes App
+</header>
+
+<main>
+    <div class="search-wrapper">
+        <input  type="text" placeholder="Type to search" id="search-box" onload="onButtonClicked()">
+
+        <div class="custom-select" style="width: 120px">
+            <label for="options-select">Search by:</label>
+
+        <select name="options-select" id="options-select" class="custom-select">
+            <option value="all">all</option>
+            <option value="movie">movie</option>
+            <option value="podcast">podcast</option>
+            <option value="song">song</option>
+            <option value="musicVideo">musicVideo</option>
+            <option value="shortFilm">shortFilm</option>
+            <option value="audioBook">audioBook</option>
+            <option value="tvShow">tv Show</option>
+
+
+        </select>
+        </div>
+        <input type="button" value="search" onclick="onButtonClicked()">
+    </div>
+    <div id="result-list">
+    </div>
+</main>
+
+<footer>
+   We Hope you found that.
+</footer>
+<script src="js/script.js"></script>
+</body>
+
+</html>
+
+
